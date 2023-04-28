@@ -94,98 +94,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-//@Composable
-//fun HomeScreen() {
-//    Scaffold(
-//        topBar = {
-//            TopAppBar(
-//                title = { Text(text = "Welcome to Study Mate!") },
-//                backgroundColor = Color.Blue
-//            )
-//        },
-//        content = {
-//            Column(
-//                modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(16.dp),
-//                horizontalAlignment = Alignment.CenterHorizontally,
-//                verticalArrangement = Arrangement.Center
-//            ) {
-//                Text(
-//                    text = "Congratulations on logging in!",
-//                    style = MaterialTheme.typography.h4,
-//                    modifier = Modifier.padding(bottom = 16.dp)
-//                )
-//                Image(
-//                    painter = painterResource(R.drawable.study_mate_logo),
-//                    contentDescription = "Study Mate Logo",
-//                    modifier = Modifier
-//                        .size(200.dp)
-//                        .padding(bottom = 16.dp)
-//                )
-//                Button(
-//                    onClick = { /* Perform action on button click */ },
-//                    modifier = Modifier
-//                        .fillMaxWidth()
-//                        .padding(bottom = 16.dp)
-//                ) {
-//                    Text("Start Studying!")
-//                }
-//            }
-//        }
-//    )
-//}
-
-//
-//@Composable
-//fun UserLoginPage() {
-//    var name by remember { mutableStateOf("") }
-//    var email by remember { mutableStateOf("") }
-//    var password by remember { mutableStateOf("") }
-//
-//    Column(
-//        modifier = Modifier
-//            .fillMaxSize()
-//            .padding(horizontal = 16.dp)
-//    ) {
-//        OutlinedTextField(
-//            value = name,
-//            onValueChange = { name = it },
-//            label = { Text("Name") },
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(vertical = 8.dp)
-//        )
-//
-//        OutlinedTextField(
-//            value = email,
-//            onValueChange = { email = it },
-//            label = { Text("Email ID") },
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(vertical = 8.dp)
-//        )
-//
-//        OutlinedTextField(
-//            value = password,
-//            onValueChange = { password = it },
-//            label = { Text("Password") },
-//            visualTransformation = PasswordVisualTransformation(),
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(vertical = 8.dp)
-//        )
-//
-//        Button(
-//            onClick = { /* Perform login action */ },
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .padding(vertical = 16.dp)
-//        ) {
-//            Text("Login")
-//        }
-//    }
-//}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -249,73 +157,7 @@ fun LoginScreen() {
 }
 
 
-//@Composable
-//fun StudyDetailsScreen() {
-//    Scaffold(
-//        topBar = {
-//            TopAppBar(
-//                title = { Text(text = "Study Details") },
-//                backgroundColor = Color.Blue,
-//                navigationIcon = {
-//                    IconButton(
-//                        onClick = { /* Perform action on navigation icon click */ }
-//                    ) {
-//                        Icon(
-//                            imageVector = Icons.Default.ArrowBack,
-//                            contentDescription = "Back"
-//                        )
-//                    }
-//                }
-//            )
-//        },
-//        content = {
-//            Column(
-//                modifier = Modifier
-//                    .fillMaxSize()
-//                    .padding(16.dp),
-//                horizontalAlignment = Alignment.CenterHorizontally,
-//                verticalArrangement = Arrangement.Top
-//            ) {
-//                Text(
-//                    text = "Unit 1",
-//                    style = MaterialTheme.typography.h5,
-//                    modifier = Modifier.padding(bottom = 8.dp)
-//                )
-//                Text(
-//                    text = "Introduction to Mathematics",
-//                    style = MaterialTheme.typography.subtitle1,
-//                    modifier = Modifier.padding(bottom = 16.dp)
-//                )
-//                Text(
-//                    text = "In this unit, you will learn about the basics of mathematics, including addition, subtraction, multiplication, and division. We will also cover fractions, decimals, and percentages.",
-//                    style = MaterialTheme.typography.body1,
-//                    modifier = Modifier.padding(bottom = 16.dp)
-//                )
-//                Text(
-//                    text = "Topics:",
-//                    style = MaterialTheme.typography.subtitle1,
-//                    modifier = Modifier.padding(bottom = 8.dp)
-//                )
-//                Text(
-//                    text = "- Addition and Subtraction\n- Multiplication and Division\n- Fractions, Decimals, and Percentages",
-//                    style = MaterialTheme.typography.body1,
-//                    modifier = Modifier.padding(bottom = 16.dp)
-//                )
-//                Text(
-//                    text = "Duration: 2 weeks",
-//                    style = MaterialTheme.typography.subtitle1,
-//                    modifier = Modifier.padding(bottom = 16.dp)
-//                )
-//                Button(
-//                    onClick = { /* Perform action on button click */ },
-//                    modifier = Modifier.fillMaxWidth()
-//                ) {
-//                    Text("Start Studying!")
-//                }
-//            }
-//        }
-//    )
-//}
+
 
 
 //create the home screen
@@ -401,7 +243,4 @@ fun HomeScreen() {
 
         }
     )
-
-
-
 }
